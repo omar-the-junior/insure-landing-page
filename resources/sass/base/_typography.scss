@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////////////
+///////////////typography styles//////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+body {
+  font-size: 1.8rem;
+  font-family: 'Barlow', sans-serif;
+}
+
+.main-text-container{
+    max-width: 67rem;
+    text-align: center;
+    margin: 0 7rem;
+    h1,
+    h2{
+        margin-bottom: 2rem;
+    }
+}
+
+h1,
+button,
+a{
+  font-family: 'Barlow Condensed', sans-serif;
+}
