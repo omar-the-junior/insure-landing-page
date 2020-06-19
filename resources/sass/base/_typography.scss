@@ -3,19 +3,36 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 body {
   font-size: 1.6rem;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
-.main-text-container{
-    max-width: 67rem;
-    text-align: center;
-    margin: 0 7rem;
-    h1,
-    h2{
-        margin-bottom: 2rem;
-    }
+.main-text-container {
+  max-width: 67rem;
+  text-align: center;
+  margin: 0 7rem;
+  h1,
+  h2 {
+    margin-bottom: 2rem;
+  }
 }
 
 h1 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 7rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.heading-with-line-on-top {
+  margin-top: 5rem;
+
+  &::before {
+    content: "";
+    height: 1px;
+    width: 15rem;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }

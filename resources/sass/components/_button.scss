@@ -3,41 +3,53 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 .btn {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-family: "karla";
+  font-size: 1.6rem;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: var(--red);
-  padding: 1.5rem 3rem;
-  border: none;
-  border-radius: 0.5rem;
-  transition: opacity 0.3s;
+  background-color: transparent;
+  padding: 0.5rem 2rem;
+  border: solid #fff 2px;
+  transition: color 0.5s;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    z-index: -1;
+    transition: width 0.5s, height 0.3s;
+    transform-origin: bottom;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 
   &:hover {
-    opacity: 0.7;
+    color: var(--dark-violet);
   }
 
   &:focus {
     outline: none;
   }
 
-  &:active {
-    opacity: 1;
-  }
+  &--dark-violet {
+    border: solid 2px var(--dark-violet);
+    color: var(--dark-violet);
 
-  &-container {
-    margin-top: 5rem;
-    .btn {
-      margin-right: 2rem;
+    &::after {
+      background-color: var(--dark-violet);
     }
 
-    span {
-      color: var(--grayish-blue);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 1.5rem;
+    &:hover {
+      color: #fff;
     }
   }
 }

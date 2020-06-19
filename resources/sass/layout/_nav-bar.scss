@@ -2,3 +2,32 @@
 ////////////////////Navigation bar/////////////////////
 //////////////////////////////////////////////////////////////////////////////////////
 
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 3rem 15rem;
+    background-color: #fff;
+    
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        
+        li{
+            list-style: none;
+            
+            &:not(:first-of-type){
+                margin-left: 3rem;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+        }
+    }
+}

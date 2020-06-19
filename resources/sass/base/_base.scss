@@ -50,3 +50,10 @@ html {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
