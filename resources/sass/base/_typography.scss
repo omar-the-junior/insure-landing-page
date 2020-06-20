@@ -17,9 +17,13 @@ body {
 }
 
 h1 {
-  font-family: "DM Serif Display", sans-serif;
   font-size: 7rem;
   font-weight: 400;
+}
+
+h1,
+h2{
+  font-family: "DM Serif Display", sans-serif;
   letter-spacing: 1px;
 }
 

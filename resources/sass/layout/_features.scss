@@ -1,0 +1,29 @@
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    position: relative;
+    max-width: 120rem;
+    h1 {
+      &::before {
+        background-color: var(--dark-violet);
+      }
+    }
+    &-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10rem;
+
+      *:not(:last-of-type) {
+        margin-right: 5rem;
+      }
+
+      h2{
+          margin: 2rem 0;
+      }
+    }
+  }
+}

@@ -7,9 +7,9 @@
   font-size: 1.6rem;
   color: #fff;
   background-color: transparent;
-  padding: 0.5rem 2rem;
+  padding: .5rem 2rem;
   border: solid #fff 2px;
-  transition: color 0.5s;
+  transition: color .5s, transform .3s;
   cursor: pointer;
   position: relative;
   z-index: 1;
@@ -24,12 +24,16 @@
     width: 0%;
     background-color: white;
     z-index: -1;
-    transition: width 0.5s, height 0.3s;
+    transition: width .5s;
     transform-origin: bottom;
   }
 
   &:hover::after {
     width: 100%;
+  }
+
+  &:active{
+    transform: scale(0.95);
   }
 
   &:hover {
