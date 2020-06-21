@@ -8,7 +8,6 @@
   --very-dark-violet: hsl(270, 65%, 67%);
   --dark-grayish-violet: hsl(273, 4%, 51%);
   --very-light-gray: hsl(0, 0%, 98%);
-
 }
 
 * {
@@ -25,21 +24,6 @@
 html {
   font-size: 10px;
   box-sizing: border-box;
-
-  @media screen and (max-width: 1080px){
-    font-size: 8px;
-  }
-  @media screen and (max-width: 880px) {
-    font-size: 6px;
-  }
-
-  @media screen and (max-width: 680px) {
-    font-size: 10px;
-  }
-
-  @media screen and (max-width: 550px) {
-    font-size: 8px;
-  }
 }
 
 .attribution {
@@ -51,9 +35,8 @@ html {
   color: hsl(228, 45%, 44%);
 }
 
-.row{
+.row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
 }
