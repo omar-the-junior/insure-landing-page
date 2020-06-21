@@ -5,6 +5,7 @@
 .btn {
   font-family: "karla";
   font-size: 1.6rem;
+  font-weight: 700;
   color: #fff;
   background-color: transparent;
   padding: .5rem 2rem;
@@ -14,6 +15,7 @@
   position: relative;
   z-index: 1;
   text-transform: uppercase;
+  
 
   &::after {
     content: "";

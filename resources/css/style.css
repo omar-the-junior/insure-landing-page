@@ -65,6 +65,7 @@ h2 {
 .btn {
   font-family: "karla";
   font-size: 1.6rem;
+  font-weight: 700;
   color: #fff;
   background-color: transparent;
   padding: .5rem 2rem;
@@ -210,6 +211,8 @@ footer {
       footer .footer__links ul li, footer .footer__links ul li a {
         text-transform: uppercase;
         font-weight: 700; }
+      footer .footer__links ul li:hover a {
+        text-decoration: underline; }
       footer .footer__links ul li a {
         text-decoration: none;
         color: var(--dark-violet); }
@@ -267,8 +270,13 @@ nav {
     margin-left: auto; }
     nav ul li {
       list-style: none; }
+      nav ul li:hover a {
+        color: var(--dark-violet); }
       nav ul li:not(:first-of-type) {
         margin-left: 3rem; }
       nav ul li a {
         text-decoration: none;
-        color: var(--dark-grayish-violet); }
+        color: var(--dark-grayish-violet);
+        transition: color .3s;
+        text-transform: uppercase;
+        font-weight: 700; }

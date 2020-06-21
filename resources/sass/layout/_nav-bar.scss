@@ -20,6 +20,9 @@ nav{
         li{
             list-style: none;
             
+            &:hover a{
+                color: var(--dark-violet);
+            }
             &:not(:first-of-type){
                 margin-left: 3rem;
             }
@@ -27,6 +30,9 @@ nav{
             a{
                 text-decoration: none;
                 color: var(--dark-grayish-violet);
+                transition: color .3s;
+                text-transform: uppercase;
+                font-weight: 700;
             }
 
         }

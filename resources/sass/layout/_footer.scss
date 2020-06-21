@@ -71,7 +71,7 @@ footer {
             &:not(:nth-child(2)){
                 margin-top: 2rem;
             }
-            
+
             &.main{
                 margin: 0 0 5rem 0;
             }
@@ -79,6 +79,10 @@ footer {
             &, a{
                 text-transform: uppercase;
                 font-weight: 700;
+            }
+
+            &:hover a{
+                text-decoration: underline;
             }
 
             a{
