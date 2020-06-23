@@ -15,16 +15,15 @@
 
 <body>
 
-  </meter>
-
   <nav>
     <img src="resources/images/logo.svg" alt="Logo">
-    <ul>
+    <ul class="nav-content">
       <li><a href="#">How we work</a></li>
       <li><a href="#">Blog</a></li>
       <li><a href="#">Account</a></li>
       <li><button class="btn btn--dark-violet">View plans</button></li>
     </ul>
+    <img class="menu-btn" src="resources/images/icon-hamburger.svg" alt="">
   </nav>
 
   <header>
@@ -44,7 +43,7 @@
     <section class="features">
       <div class="features__content">
         <h1 class="heading-with-line-on-top">We’re different</h1>
-        <div class="features__content-items row">
+        <div class="features__content-items">
           <div>
             <img src="resources/images/icon-snappy-process.svg" alt="">
             <h2>Snappy Process</h2>
@@ -68,8 +67,10 @@
     </section>
 
     <section class="find-more">
-      <h2>Find out more about how we work</h2>
-      <button class="btn">How we work</button>
+      <div class="find-more__content">
+        <h1>Find out more about how we work</h1>
+        <button class="btn">How we work</button>
+      </div>
     </section>
 
   </main>
@@ -132,5 +133,7 @@
     Coded by <a href="https://github.com/Omar-JR">Omar Masoud Omar</a>.
   </div>
 </body>
+
+<script src="./resources/javascript/menu.js"></script>
 
 </html>

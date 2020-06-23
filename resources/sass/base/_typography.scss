@@ -19,10 +19,18 @@ body {
 h1 {
   font-size: 7rem;
   font-weight: 400;
+
+  @media only screen and (max-width: 1180px) {
+    font-size: 5rem;
+  }
+
+  @media only screen and (max-width:500px){
+      font-size: 4rem;
+  }
 }
 
 h1,
-h2{
+h2 {
   font-family: "DM Serif Display", sans-serif;
   letter-spacing: 1px;
 }
@@ -38,5 +46,11 @@ h2{
     position: absolute;
     top: 0;
     left: 0;
+
+    @media only screen and (max-width: 815px) {
+      left: calc(50% - 7.5rem); // centering the line by subtracting 50% of th total width by halth the line width
+    }
+
+    
   }
 }

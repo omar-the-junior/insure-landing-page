@@ -1,33 +1,82 @@
-.find-more{
+.find-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem;
+
+    @media only screen and (max-width: 910px){
+        padding: 0 5rem;
+    }
+  &__content {
     position: relative;
-    max-width: 120rem;
-    margin: 25rem auto;
+    width: 120rem;
+    max-width: 100%;
+    margin: 20rem 0;
     padding: 5rem 7rem;
     background-color: var(--dark-violet);
     display: flex;
     justify-content: center;
     align-items: center;
 
-    &::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
-        background-repeat: no-repeat;
-        background-position: right;
+    @media only screen and (max-width: 910px){
+        padding: 5rem ;
     }
 
-    h2{
-        color: white;
-        font-weight: 400;
-        font-size: 5rem;
-        width: 50rem;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
 
-    button{
-        margin-left: auto;
+}
+
+  h1 {
+    color: white;
+    font-weight: 400;
+    max-width: 50rem;
+    margin-right: 5rem;
+    font-size: 5rem;
+
+    @media only screen and (max-width: 1200px){
+        font-size: 3.5rem;
+        max-width: 40rem;
     }
+  }
+
+  button {
+    margin-left: auto;
+  }
+
+  @media only screen and (max-width:815px){
+      padding: 5rem 2.5rem;
+      &__content{
+          flex-direction: column;
+
+          &::before{
+            background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+            background-position: top right;
+        }
+         
+          h1,
+          button{
+              margin: 0;
+          }
+
+          h1{
+              max-width: 100%;
+              text-align: center;
+          }
+
+          button{
+              margin-top: 2rem;
+          }
+          
+      }
+  }
 }

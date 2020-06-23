@@ -12,33 +12,49 @@ header {
   padding: 10rem;
   margin-bottom: 25rem;
 
-
-  &::before, &::after{
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     left: 0;
     background-repeat: no-repeat;
+    background-size: contain;
     width: 100%;
     height: 100%;
   }
 
-  &::before{
+  &::before {
     top: -10rem;
     background-image: url("../images/bg-pattern-intro-right-desktop.svg");
     background-position: top right;
     z-index: 0;
   }
 
-  &::after{
+  &::after {
     top: 40rem;
     background-image: url("../images/bg-pattern-intro-left-desktop.svg");
   }
 
-
+  @media only screen and (max-width: 1280px) {
+    padding: 5rem 10rem;
+  }
+  @media only screen and (max-width: 910px) {
+    padding: 5rem;
+  }
 
   .header {
     &__img {
       margin-bottom: -25rem;
+
+      @media only screen and (max-width: 1280px) {
+        max-width: 41rem;
+        margin-bottom: -15rem;
+      }
+
+      @media only screen and (max-width: 1010px) {
+        max-width: 31rem;
+        margin-bottom: -15rem;
+      }
     }
 
     &-content {
@@ -47,16 +63,80 @@ header {
       color: #fff;
       position: relative;
       margin-right: 2rem;
+
       h1 {
-        width: 50rem;
+        max-width: 50rem;
         line-height: 60px;
+
+        @media only screen and (max-width: 815px) {
+          &::before {
+            display: none;
+          }
+        }
       }
 
-      p{
-          margin: 3rem 0 5rem 0;
+      p {
+        margin: 3rem 0 5rem 0;
+        line-height: 25px;
       }
     }
   }
 
+  @media only screen and (max-width: 815px) {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
 
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    .header {
+      &__img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+      }
+
+      &-content {
+        padding: 10rem 5rem;
+        margin: 0;
+        align-self: unset;
+        max-width: 100%;
+
+        h1 {
+          max-width: 100%;
+        }
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+        }
+
+        &::before {
+          background-image: url("../images/bg-pattern-intro-left-mobile.svg");
+          background-position: top left;
+        }
+
+        &::after {
+          top: 35%;
+          background-image: url("../images/bg-pattern-intro-right-mobile.svg");
+          background-position: bottom right;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .header-content {
+      padding: 10rem 2.5rem;
+    }
+  }
 }

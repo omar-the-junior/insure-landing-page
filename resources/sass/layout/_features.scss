@@ -2,30 +2,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10rem;
 
+  @media only screen and (max-width: 920px) {
+    padding: 0 5rem;
+  }
   &__content {
     position: relative;
     max-width: 120rem;
+
+    @media only screen and (max-width: 815px){
+      text-align: center;
+  }
     h1 {
       &::before {
         background-color: var(--dark-violet);
       }
+
+
     }
     &-items {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      margin-top: 10rem;
+      margin-top: 5rem;
+      flex-wrap: wrap;
 
-      *:not(:last-of-type) {
-        margin-right: 5rem;
+      @media only screen and (max-width: 815px) {
+        justify-content: center;
+      }
+
+      div {
+        flex: 0 35rem;
+        padding: 5rem 0;
       }
 
       h2 {
         margin: 2rem 0;
       }
 
-      p{
+      p {
         color: var(--dark-grayish-violet);
         line-height: 25px;
       }
